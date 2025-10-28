@@ -45,7 +45,7 @@ const BenefitsSection = () => {
 
         {/* === Card 3 === */}
         <div className="bg-white rounded-3xl p-10 shadow-md hover:shadow-lg transition">
-          <Star className="mx-auto mb-6 text-purple-600 w-12 h-12" />
+          <Star className="mx-auto mb-6 text-purple-601 w-12 h-12" />
           <h3 className="text-xl font-semibold mb-3 text-gray-900">
             24/7 Support
           </h3>
