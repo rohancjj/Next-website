@@ -49,7 +49,7 @@ const MarketplaceFeatures = () => {
         </div>
 
         {/* === Feature Cards === */}
-        <div className="grid gap-6 md:grid-cols-3 justify-center">
+        <div className="grid gap-0 md:grid-cols-3 justify-center">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -82,7 +82,7 @@ const MarketplaceFeatures = () => {
               {/* === Title === */}
               <h3 className="text-2xl font-semibold mb-3">{feature.title}</h3>
 
-              {/* === Description === */}
+              
               <p className="text-gray-700 text-base leading-relaxed">
                 {feature.description}
               </p>
