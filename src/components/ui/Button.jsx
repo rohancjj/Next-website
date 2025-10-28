@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Button({ type = "google", text = "Click Me" }) {
   switch (type) {
-    // ===== Google-style Button =====
+    
     case "google":
       return (
         <button className="relative flex items-center gap-3 px-6 py-2 text-sm font-bold text-gray-800 uppercase rounded-lg border border-black/25 bg-white transition-transform duration-500 hover:scale-105">
@@ -41,11 +41,11 @@ export default function Button({ type = "google", text = "Click Me" }) {
         </button>
       );
 
-    // ===== Animated SVG Send Button =====
+    
     case "send":
   return (
     <button className="relative flex items-center overflow-hidden bg-blue-600 text-white px-2 py-2 rounded-xl text-lg font-medium transition-transform duration-200 active:scale-95 group">
-      {/* Arrow wrapper */}
+     
       <div className="svg-wrapper-2 relative flex items-center justify-center transition-transform duration-200 group-hover:animate-bounce">
         <div className="svg-wrapper transition-transform duration-300 group-hover:translate-x-15 group-hover:rotate-45 group-hover:scale-100">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6">
@@ -58,18 +58,18 @@ export default function Button({ type = "google", text = "Click Me" }) {
         </div>
       </div>
 
-      {/* Text */}
+      
       <span className="ml-2 transition-transform duration-300 group-hover:translate-x-50">
         {text}
       </span>
     </button>
   );
   
-  // ===== Sliding Highlight Button =====
+  
 case "slide":
   return (
     <button className="relative group bg-white w-40 h-14 rounded-2xl text-black text-xl font-semibold flex items-center overflow-hidden">
-      {/* Sliding highlight + arrow */}
+      
       <div className="absolute left-1 top-[4px] h-12 w-1/4 bg-green-400 rounded-xl flex items-center justify-center z-10 transition-all duration-500 group-hover:w-[152px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ case "slide":
         </svg>
       </div>
 
-      {/* Text */}
+      
       <p className="ml-[60px] transition-transform duration-300 group-hover:translate-x-4">
         {text}
       </p>
